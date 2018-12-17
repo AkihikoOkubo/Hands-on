@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fOY-Ev-04l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Save View Controller-->
+        <scene sceneID="cA5-za-pOc">
+            <objects>
+                <viewController id="fOY-Ev-04l" customClass="SaveViewController" customModule="hands_on_reminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KDg-80-Dmc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="リマインダーの登録UIを実装する" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Id-xJ-NXr">
+                                <rect key="frame" x="73" y="324.5" width="229" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AK3-Ds-qJs">
+                                <rect key="frame" x="167" y="607" width="41" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1wW-uF-pdR"/>
+                                    <constraint firstAttribute="width" constant="41" id="3Ud-At-0kS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="save:" destination="fOY-Ev-04l" eventType="touchUpInside" id="0qL-G3-lrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4D-bc-1aK">
+                                <rect key="frame" x="24" y="44" width="30" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="close:" destination="fOY-Ev-04l" eventType="touchUpInside" id="h2N-Cv-Bpk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Id-xJ-NXr" firstAttribute="centerX" secondItem="KDg-80-Dmc" secondAttribute="centerX" id="8X3-AX-jlx"/>
+                            <constraint firstItem="AK3-Ds-qJs" firstAttribute="centerX" secondItem="KDg-80-Dmc" secondAttribute="centerX" id="E0c-8a-Zdv"/>
+                            <constraint firstItem="5Id-xJ-NXr" firstAttribute="centerY" secondItem="KDg-80-Dmc" secondAttribute="centerY" id="VHi-mC-s4g"/>
+                            <constraint firstItem="X4D-bc-1aK" firstAttribute="leading" secondItem="Uiz-ka-iZx" secondAttribute="leading" constant="24" id="obf-LS-vIt"/>
+                            <constraint firstItem="Uiz-ka-iZx" firstAttribute="bottom" secondItem="AK3-Ds-qJs" secondAttribute="bottom" constant="24" id="tcf-yh-yJc"/>
+                            <constraint firstItem="X4D-bc-1aK" firstAttribute="top" secondItem="Uiz-ka-iZx" secondAttribute="top" constant="24" id="z8y-GL-JU9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uiz-ka-iZx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="292-OC-nNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-70" y="30"/>
+        </scene>
+    </scenes>
+</document>
